@@ -939,3 +939,234 @@ margin: 40px 0px;
         font-size:2rem;
     }
 }
+
+/* ================= MOBILE RESPONSIVE FIXES ================= */
+
+@media (max-width: 992px){
+
+  /* Navigation */
+  nav{
+    padding: 0 15px;
+  }
+
+  .nav-options{
+    margin-right: 0;
+  }
+
+  .nav-list{
+    padding: 20px 12px;
+    font-size: 14px;
+  }
+
+  /* Hero Section */
+  .banner{
+    height: 100vh;
+  }
+
+  .banner .slider{
+    width: 110px;
+    height: 150px;
+    left: calc(50% - 55px);
+  }
+
+  .banner .slider .item{
+    transform:
+    rotateY(calc((var(--position) - 1) * (360/var(--quantity)) * 1deg))
+    translateZ(320px);
+  }
+
+  .banner .content{
+    width: 100%;
+    padding: 0 20px 80px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .banner .content h1{
+    font-size: 3rem;
+  }
+
+  .banner .content .sub-content{
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .banner .content h2{
+    font-size: 1.8rem;
+  }
+
+  .banner .content .model{
+    height: 45vh;
+    background-size: contain;
+  }
+
+  /* Stars Grid */
+  .stars-section{
+    padding: 80px 20px 20px;
+  }
+
+  .stars-header h1{
+    font-size: 2.5rem;
+  }
+
+  .stellar-showcase{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stellar-card{
+    height: 300px;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6,
+  .card-7,
+  .card-8{
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  /* Constellation */
+  .constellation-header{
+    left: 20px;
+    top: 30px;
+  }
+
+  .constellation-header h1{
+    font-size: 2.5rem;
+  }
+
+  .constellation-header p{
+    font-size: 14px;
+  }
+
+  .info-card{
+    width: 180px;
+    left: 20px;
+  }
+
+  .info-card h3{
+    font-size: 1rem;
+  }
+
+  .info-card p{
+    font-size: 12px;
+  }
+
+  /* Satellite */
+  .satellite-header h1{
+    font-size: 2.5rem;
+  }
+
+  .satellite-slider{
+    width: 100%;
+    height: 750px;
+  }
+
+  .slide-content{
+    padding: 25px;
+  }
+
+  .slide-content h2{
+    font-size: 2rem;
+  }
+
+  .slide-content p{
+    font-size: 1rem;
+  }
+
+  .prev{
+    left: 10px;
+    bottom: -80px;
+    top: auto;
+  }
+
+  .next{
+    right: 10px;
+    bottom: -80px;
+    top: auto;
+  }
+}
+
+
+/* ================= EXTRA SMALL DEVICES ================= */
+
+@media (max-width: 576px){
+
+  .logo h2{
+    font-size: 1.1rem;
+  }
+
+  .nav-ul{
+    gap: 2px;
+  }
+
+  .nav-list{
+    padding: 15px 8px;
+    font-size: 12px;
+  }
+
+  .banner .slider{
+    width: 90px;
+    height: 130px;
+    left: calc(50% - 45px);
+  }
+
+  .banner .slider .item{
+    transform:
+    rotateY(calc((var(--position) - 1) * (360/var(--quantity)) * 1deg))
+    translateZ(240px);
+  }
+
+  .banner .content h1{
+    font-size: 2.2rem;
+  }
+
+  .banner .content h2{
+    font-size: 1.4rem;
+  }
+
+  .slider-section .heading-div{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .slider-section .swiper{
+    width: 95%;
+    padding: 40px 0;
+  }
+
+  .slider-section .swiper-slide{
+    width: 200px !important;
+  }
+
+  .stars-header h1{
+    font-size: 2rem;
+  }
+
+  .satellite-header h1{
+    font-size: 2rem;
+  }
+
+  .slide-content h2{
+    font-size: 1.5rem;
+  }
+
+  .info span{
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .nav-btn{
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
