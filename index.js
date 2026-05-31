@@ -20,14 +20,12 @@ const swiper = new Swiper(".swiper", {
 
   on: {
     click(event) {
-    
-        swiper.slideTo(this.clickedIndex);
-      
-    }
+      swiper.slideTo(this.clickedIndex);
+    },
   },
-  pagination:{
-    el:".swiper-pagination"
-  }
+  pagination: {
+    el: ".swiper-pagination",
+  },
 });
 
 // ====================== INFO BOX LOGIC ======================
@@ -84,9 +82,6 @@ infoBoxes.forEach((box) => {
   });
 });
 
-
-
-
 const slides = document.querySelectorAll(".slide");
 
 const nextBtn = document.querySelector(".next");
@@ -94,33 +89,54 @@ const prevBtn = document.querySelector(".prev");
 
 let current = 0;
 
-function showSlide(index){
+function showSlide(index) {
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
 
-    slides.forEach(slide=>{
-        slide.classList.remove("active");
-    });
-
-    slides[index].classList.add("active");
+  slides[index].classList.add("active");
 }
 
-nextBtn.addEventListener("click",()=>{
+nextBtn.addEventListener("click", () => {
+  current++;
 
-    current++;
+  if (current >= slides.length) {
+    current = 0;
+  }
 
-    if(current >= slides.length){
-        current = 0;
-    }
-
-    showSlide(current);
+  showSlide(current);
 });
 
-prevBtn.addEventListener("click",()=>{
+prevBtn.addEventListener("click", () => {
+  current--;
 
-    current--;
+  if (current < 0) {
+    current = slides.length - 1;
+  }
 
-    if(current < 0){
-        current = slides.length - 1;
-    }
+  showSlide(current);
+});
 
-    showSlide(current);
+// ================= SCROLL REVEAL =================
+
+const revealElements = document.querySelectorAll(
+  ".banner, .slider-section, .stars-section, .constellation-section, .satellite-section",
+);
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+  },
+);
+
+revealElements.forEach((el) => {
+  el.classList.add("reveal");
+  observer.observe(el);
 });

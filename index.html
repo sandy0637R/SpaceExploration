@@ -1,671 +1,636 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration</title>
+    <link rel="icon" type="image/png" href="/images/astronauts.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-  <title>Space Exploration</title>
-  <link rel="icon" type="image/png" href="/images/astronauts.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
-  <link rel="stylesheet" href="index.css">
-</head>
-
-<body>
-  <nav
-  class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-75 fixed-top border-bottom border-secondary"
->
-  <div class="container">
-
-    <!-- Logo -->
-
-    <a class="navbar-brand fw-bold fs-3" href="#home">
-      <span class="text-info">Space</span>Exploration
-    </a>
-
-    <!-- Mobile Toggle -->
-
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarContent"
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-75 fixed-top border-bottom border-secondary"
     >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="container">
+        <!-- Logo -->
 
-    <!-- Links -->
+        <a class="navbar-brand fw-bold fs-3" href="#home">
+          <span class="text-info">Space</span>Exploration
+        </a>
 
-    <div class="collapse navbar-collapse" id="navbarContent">
+        <!-- Mobile Toggle -->
 
-      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <li class="nav-item">
-          <a class="nav-link active" href="#home">Home</a>
-        </li>
+        <!-- Links -->
 
-        <li class="nav-item">
-          <a class="nav-link" href="#astronauts">Astronauts</a>
-        </li>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#galaxies">Galaxies</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#astronauts">Astronauts</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#stars">Stars</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galaxies">Galaxies</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#satellites">Satellites</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stars">Stars</a>
+            </li>
 
-        <li class="nav-item ms-lg-2">
-          <a
-            class="btn btn-info text-dark fw-semibold px-3"
-            href="#footer"
-          >
-            Contact Me
-          </a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#satellites">Satellites</a>
+            </li>
 
-      </ul>
-
-    </div>
-
-  </div>
-</nav>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-info text-dark fw-semibold px-3" href="#footer">
+                Contact Me
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!---------------------- Hero Section---------------------->
-  <section class="banner" id="home">
-    <div class="slider" style="--quantity: 9">
-      <div class="item" style="--position:1 ;"><img src="images/mercury.png" alt=""></div>
-      <div class="item" style="--position: 2;"><img src="images/venus.png" alt=""></div>
-      <div class="item" style="--position: 3;"><img src="images/earth.png" alt=""></div>
-      <div class="item" style="--position: 4;"><img src="images/mars.png" alt=""></div>
-      <div class="item" style="--position: 5;"><img src="images/jupiter.png" alt=""></div>
-      <div class="item" style="--position: 6;"><img src="images/neptune.png" alt=""></div>
-      <div class="item" style="--position: 7;"><img src="images/saturn.png" alt=""></div>
-      <div class="item" style="--position: 8;"><img src="images/uranus.png" alt=""></div>
-      <div class="item" style="--position: 9;"><img src="images/pluto.png" alt=""></div>
-
-    </div>
-    <div class="content">
-      <h1 data-content="SOLAR SYSTEM">
-        SOLAR SYSTEM
-      </h1>
-      <div class="sub-content">
-        <h2> Space Exploration</h2>
-        <p><b>Explore the Final Frontier</b></p>
-        <p>
-          Uncover the mysteries of space, from distant worlds to the vast cosmic frontier.
-        </p>
+    <section class="banner" id="home">
+      <div class="slider" style="--quantity: 9">
+        <div class="item" style="--position: 1">
+          <img src="images/mercury.png" alt="" />
+        </div>
+        <div class="item" style="--position: 2">
+          <img src="images/venus.png" alt="" />
+        </div>
+        <div class="item" style="--position: 3">
+          <img src="images/earth.png" alt="" />
+        </div>
+        <div class="item" style="--position: 4">
+          <img src="images/mars.png" alt="" />
+        </div>
+        <div class="item" style="--position: 5">
+          <img src="images/jupiter.png" alt="" />
+        </div>
+        <div class="item" style="--position: 6">
+          <img src="images/neptune.png" alt="" />
+        </div>
+        <div class="item" style="--position: 7">
+          <img src="images/saturn.png" alt="" />
+        </div>
+        <div class="item" style="--position: 8">
+          <img src="images/uranus.png" alt="" />
+        </div>
+        <div class="item" style="--position: 9">
+          <img src="images/pluto.png" alt="" />
+        </div>
       </div>
-      <div class="model"></div>
-    </div>
-  </section>
+      <div class="content">
+        <h1 data-content="SOLAR SYSTEM">SOLAR SYSTEM</h1>
+        <div class="sub-content">
+          <h2>Space Exploration</h2>
+          <p><b>Explore the Final Frontier</b></p>
+          <p>
+            Uncover the mysteries of space, from distant worlds to the vast
+            cosmic frontier.
+          </p>
+        </div>
+        <div class="model"></div>
+      </div>
+    </section>
 
+    <!----------------------- Slider section  -------------------->
 
-
-  <!----------------------- Slider section  -------------------->
-
-  <section class="slider-section " id="astronauts">
-
-    <div class="heading-div"><h1>Astronauts</h1></div>
-    <div class="swiper">
-
-      <div class="swiper-wrapper">
-
+    <section class="slider-section" id="astronauts">
+      <div class="heading-div"><h1>Astronauts</h1></div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="images/BuzzAldrin.jpg" alt="Buzz Aldrin">
-  
+            <img src="images/BuzzAldrin.jpg" alt="Buzz Aldrin" />
+
             <div class="title">
               <span>Buzz Aldrin</span>
             </div>
-  
+
             <div class="info-box">
               <h3>Buzz Aldrin</h3>
               <p>
-               Second person to walk on the Moon during the Apollo 11 mission on July 20, 1969, alongside Neil Armstrong.
+                Second person to walk on the Moon during the Apollo 11 mission
+                on July 20, 1969, alongside Neil Armstrong.
               </p>
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="images/UriGagarin.jpg" alt="Uri Gagarin">
-  
+            <img src="images/UriGagarin.jpg" alt="Uri Gagarin" />
+
             <div class="title">
               <span>Uri Gagarin</span>
             </div>
-  
+
             <div class="info-box">
               <h3>Uri Gagarin</h3>
               <p>
-               First human to travel into space aboard Vostok 1 on April 12, 1961, opening the era of human spaceflight.
+                First human to travel into space aboard Vostok 1 on April 12,
+                1961, opening the era of human spaceflight.
               </p>
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="images/amstrong.jpg" alt="Neil Armstrong">
-  
+            <img src="images/amstrong.jpg" alt="Neil Armstrong" />
+
             <div class="title">
               <span>Neil Armstrong</span>
             </div>
-  
+
             <div class="info-box">
               <h3>Neil Armstrong</h3>
               <p>
-                First person to walk on the Moon during the Apollo 11 mission on July 20, 1969.
+                First person to walk on the Moon during the Apollo 11 mission on
+                July 20, 1969.
               </p>
             </div>
           </div>
-        <div class="swiper-slide">
-          <img src="images/ValentinaTereshkova.jpg" alt="Valentina Tereshkova">
+          <div class="swiper-slide">
+            <img
+              src="images/ValentinaTereshkova.jpg"
+              alt="Valentina Tereshkova"
+            />
 
-          <div class="title">
-            <span>Valentina Tereshkova</span>
+            <div class="title">
+              <span>Valentina Tereshkova</span>
+            </div>
+
+            <div class="info-box">
+              <h3>Valentina Tereshkova</h3>
+              <p>
+                First woman to travel into space aboard Vostok 6 on June 16,
+                1963, marking a historic milestone in exploration.
+              </p>
+            </div>
           </div>
 
-          <div class="info-box">
-            <h3>Valentina Tereshkova</h3>
-            <p>
-             First woman to travel into space aboard Vostok 6 on June 16, 1963, marking a historic milestone in exploration.
-            </p>
+          <div class="swiper-slide">
+            <img src="images/JohnGlen.jpg" alt="John Glen" />
+
+            <div class="title">
+              <span>John Glen</span>
+            </div>
+
+            <div class="info-box">
+              <h3>John Glen</h3>
+              <p>
+                First American to orbit Earth aboard Friendship 7 on February
+                20, 1962, becoming a pioneer of U.S. spaceflight.
+              </p>
+            </div>
           </div>
         </div>
-
-
-
-
-        <div class="swiper-slide">
-          <img src="images/JohnGlen.jpg" alt="John Glen">
-
-          <div class="title">
-            <span>John Glen</span>
-          </div>
-
-          <div class="info-box">
-            <h3>John Glen</h3>
-            <p>
-             First American to orbit Earth aboard Friendship 7 on February 20, 1962, becoming a pioneer of U.S. spaceflight.
-            </p>
-          </div>
-        </div>
-
+        <div class="swiper-pagination"></div>
       </div>
-<div class="swiper-pagination"></div>
-    </div>
+    </section>
 
-  </section>
-
-
-
-<!------------------------- Log Section ----------------------->
-<section class="stars-section" id="galaxies">
-
-    <div class="stars-header">
+    <!------------------------- Log Section ----------------------->
+    <section class="stars-section" id="galaxies">
+      <div class="stars-header">
         <h1>Galaxies</h1>
         <p>Explore the most fascinating galaxies in our universe.</p>
-    </div>
+      </div>
 
-    <div class="stellar-showcase">
-
+      <div class="stellar-showcase">
         <div class="stellar-card card-1">
-            <img src="images/milkyway.jpg">
-            <div class="stellar-overlay">
-                <h2>Milky Way</h2>
-                <p>Barred spiral galaxy that contains our Solar System.</p>
-            </div>
+          <img src="images/milkyway.jpg" />
+          <div class="stellar-overlay">
+            <h2>Milky Way</h2>
+            <p>Barred spiral galaxy that contains our Solar System.</p>
+          </div>
         </div>
 
         <div class="stellar-card card-2">
-            <img src="images/andromedagalaxy.jpg">
-            <div class="stellar-overlay">
-                <h2>Andromeda Galaxy</h2>
-                <p>Nearest major spiral galaxy to the Milky Way.</p>
-            </div>
+          <img src="images/andromedagalaxy.jpg" />
+          <div class="stellar-overlay">
+            <h2>Andromeda Galaxy</h2>
+            <p>Nearest major spiral galaxy to the Milky Way.</p>
+          </div>
         </div>
 
         <div class="stellar-card card-3">
-            <img src="images/triangulumgalaxy.jpg">
-            <div class="stellar-overlay">
-                <h2>Triangulum Galaxy</h2>
-                <p>Spiral galaxy and member of the Local Group.</p>
-            </div>
+          <img src="images/triangulumgalaxy.jpg" />
+          <div class="stellar-overlay">
+            <h2>Triangulum Galaxy</h2>
+            <p>Spiral galaxy and member of the Local Group.</p>
+          </div>
         </div>
 
         <div class="stellar-card card-4">
-            <img src="/images/whirlpoolgalaxy.jpg">
-            <div class="stellar-overlay">
-                <h2>Whirlpool Galaxy</h2>
-                <p>Spiral galaxy known for its striking arms.</p>
-            </div>
+          <img src="/images/whirlpoolgalaxy.jpg" />
+          <div class="stellar-overlay">
+            <h2>Whirlpool Galaxy</h2>
+            <p>Spiral galaxy known for its striking arms.</p>
+          </div>
         </div>
 
         <div class="stellar-card card-5">
-            <img src="/images/sombrerogalaxy.jpg">
-            <div class="stellar-overlay">
-                <h2>Sombrero Galaxy</h2>
-                <p>Spiral-lenticular galaxy with a bright central bulge.</p>
-            </div>
+          <img src="/images/sombrerogalaxy.jpg" />
+          <div class="stellar-overlay">
+            <h2>Sombrero Galaxy</h2>
+            <p>Spiral-lenticular galaxy with a bright central bulge.</p>
+          </div>
         </div>
 
         <div class="stellar-card card-6">
-            <img src="/images/messier87.jpg">
-            <div class="stellar-overlay">
-                <h2>Messier 87</h2>
-                <p>Giant elliptical galaxy hosting a supermassive black hole.</p>
-            </div>
+          <img src="/images/messier87.jpg" />
+          <div class="stellar-overlay">
+            <h2>Messier 87</h2>
+            <p>Giant elliptical galaxy hosting a supermassive black hole.</p>
+          </div>
         </div>
 
         <div class="stellar-card card-7">
-            <img src="/images/large-magellanic-cloud.jpg">
-            <div class="stellar-overlay">
-                <h2>Large Magellanic Cloud</h2>
-                <p>Irregular dwarf galaxy orbiting the Milky Way.</p>
-            </div>
+          <img src="/images/large-magellanic-cloud.jpg" />
+          <div class="stellar-overlay">
+            <h2>Large Magellanic Cloud</h2>
+            <p>Irregular dwarf galaxy orbiting the Milky Way.</p>
+          </div>
         </div>
 
         <div class="stellar-card card-8">
-            <img src="/images/centaurusa.jpg">
-            <div class="stellar-overlay">
-                <h2>Centaurus A</h2>
-                <p>Peculiar elliptical galaxy with an active galactic core.</p>
-            </div>
+          <img src="/images/centaurusa.jpg" />
+          <div class="stellar-overlay">
+            <h2>Centaurus A</h2>
+            <p>Peculiar elliptical galaxy with an active galactic core.</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!------------------ Constellation Section  -------------->
 
-</section>
-
-<!------------------ Constellation Section  -------------->
-
-<section class="constellation-section" id="stars">
-
-    <div class="constellation-header">
+    <section class="constellation-section" id="stars">
+      <div class="constellation-header">
         <h1>Stars</h1>
         <p>Explore the brightest stars in the night sky.</p>
-    </div>
+      </div>
 
-    <svg class="constellation-svg" viewBox="0 0 1200 700">
-
+      <svg class="constellation-svg" viewBox="0 0 1200 700">
         <!-- CONNECTIONS -->
 
-        <line x1="600" y1="120" x2="350" y2="250"/>
-        <line x1="600" y1="120" x2="850" y2="250"/>
+        <line x1="600" y1="120" x2="350" y2="250" />
+        <line x1="600" y1="120" x2="850" y2="250" />
 
-        <line x1="350" y1="250" x2="600" y2="400"/>
-        <line x1="850" y1="250" x2="600" y2="400"/>
+        <line x1="350" y1="250" x2="600" y2="400" />
+        <line x1="850" y1="250" x2="600" y2="400" />
 
-        <line x1="600" y1="400" x2="420" y2="550"/>
-        <line x1="600" y1="400" x2="780" y2="550"/>
+        <line x1="600" y1="400" x2="420" y2="550" />
+        <line x1="600" y1="400" x2="780" y2="550" />
 
-        <line x1="420" y1="550" x2="780" y2="550"/>
+        <line x1="420" y1="550" x2="780" y2="550" />
+      </svg>
 
-    </svg>
+      <!-- STARS -->
 
-    <!-- STARS -->
-
-    <div class="star star1">
+      <div class="star star1">
         <span></span>
 
         <div class="info-card">
-            <h3>Vega</h3>
-            <p>One of the brightest stars visible from Earth.</p>
+          <h3>Vega</h3>
+          <p>One of the brightest stars visible from Earth.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="star star2">
+      <div class="star star2">
         <span></span>
 
         <div class="info-card">
-            <h3>Sirius</h3>
-            <p>The brightest star in the night sky.</p>
+          <h3>Sirius</h3>
+          <p>The brightest star in the night sky.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="star star3">
+      <div class="star star3">
         <span></span>
 
         <div class="info-card">
-            <h3>Polaris</h3>
-            <p>The famous North Star.</p>
+          <h3>Polaris</h3>
+          <p>The famous North Star.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="star star4">
+      <div class="star star4">
         <span></span>
 
         <div class="info-card">
-            <h3>Betelgeuse</h3>
-            <p>A red supergiant nearing the end of its life.</p>
+          <h3>Betelgeuse</h3>
+          <p>A red supergiant nearing the end of its life.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="star star5">
+      <div class="star star5">
         <span></span>
 
         <div class="info-card">
-            <h3>Rigel</h3>
-            <p>A massive blue-white supergiant.</p>
+          <h3>Rigel</h3>
+          <p>A massive blue-white supergiant.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="star star6">
+      <div class="star star6">
         <span></span>
 
         <div class="info-card">
-            <h3>Antares</h3>
-            <p>A giant red star in Scorpio.</p>
+          <h3>Antares</h3>
+          <p>A giant red star in Scorpio.</p>
         </div>
-    </div>
+      </div>
+    </section>
 
-</section>
+    <!---------------------------- Satelite Section  ----------------------->
 
-
-<!---------------------------- Satelite Section  ----------------------->
-
-<section class="satellite-section" id="satelites">
-
-    <div class="satellite-header">
+    <section class="satellite-section" id="satelites">
+      <div class="satellite-header">
         <h1>Satellites</h1>
         <p>Discover the machines orbiting our planet.</p>
-    </div>
+      </div>
 
-    <div class="satellite-slider">
-
+      <div class="satellite-slider">
         <button class="nav-btn prev">&#10094;</button>
 
         <div class="slides">
+          <!-- Slide 1 -->
 
-            <!-- Slide 1 -->
-
-            <div class="slide active">
-
-                <div class="slide-image">
-                    <img src="images/international-space-station.jpg" alt="">
-                </div>
-
-                <div class="slide-content">
-                    <h2>International Space Station</h2>
-
-                    <p>
-                        The ISS is a modular space station orbiting Earth.
-                        It serves as a microgravity laboratory for scientific
-                        research and international cooperation.
-                    </p>
-
-                    <div class="info">
-                        <span>Altitude: 408 km</span>
-                        <span>Speed: 27,600 km/h</span>
-                    </div>
-                </div>
-
+          <div class="slide active">
+            <div class="slide-image">
+              <img src="images/international-space-station.jpg" alt="" />
             </div>
 
-            <!-- Slide 2 -->
+            <div class="slide-content">
+              <h2>International Space Station</h2>
 
-            <div class="slide">
+              <p>
+                The ISS is a modular space station orbiting Earth. It serves as
+                a microgravity laboratory for scientific research and
+                international cooperation.
+              </p>
 
-                <div class="slide-image">
-                    <img src="images/hubble-space-telescope.jpg" alt="">
-                </div>
+              <div class="info">
+                <span>Altitude: 408 km</span>
+                <span>Speed: 27,600 km/h</span>
+              </div>
+            </div>
+          </div>
 
-                <div class="slide-content">
-                    <h2>Hubble Telescope</h2>
+          <!-- Slide 2 -->
 
-                    <p>
-                        Hubble has transformed astronomy by capturing
-                        breathtaking images of distant galaxies and nebulae.
-                    </p>
-
-                    <div class="info">
-                        <span>Launch: 1990</span>
-                        <span>Orbit: Low Earth Orbit</span>
-                    </div>
-                </div>
-
+          <div class="slide">
+            <div class="slide-image">
+              <img src="images/hubble-space-telescope.jpg" alt="" />
             </div>
 
-            <!-- Slide 3 -->
+            <div class="slide-content">
+              <h2>Hubble Telescope</h2>
 
-            <div class="slide">
+              <p>
+                Hubble has transformed astronomy by capturing breathtaking
+                images of distant galaxies and nebulae.
+              </p>
 
-                <div class="slide-image">
-                    <img src="images/james-webb-space-telescope.jpg" alt="">
-                </div>
+              <div class="info">
+                <span>Launch: 1990</span>
+                <span>Orbit: Low Earth Orbit</span>
+              </div>
+            </div>
+          </div>
 
-                <div class="slide-content">
-                    <h2>James Webb</h2>
+          <!-- Slide 3 -->
 
-                    <p>
-                        The most powerful space telescope ever built,
-                        designed to observe the earliest galaxies.
-                    </p>
-
-                    <div class="info">
-                        <span>Launch: 2021</span>
-                        <span>Orbit: L2 Point</span>
-                    </div>
-                </div>
-
+          <div class="slide">
+            <div class="slide-image">
+              <img src="images/james-webb-space-telescope.jpg" alt="" />
             </div>
 
-            <!-- Slide 4 -->
+            <div class="slide-content">
+              <h2>James Webb</h2>
 
-            <div class="slide">
+              <p>
+                The most powerful space telescope ever built, designed to
+                observe the earliest galaxies.
+              </p>
 
-                <div class="slide-image">
-                    <img src="images/gps-block-III.jpg" alt="">
-                </div>
+              <div class="info">
+                <span>Launch: 2021</span>
+                <span>Orbit: L2 Point</span>
+              </div>
+            </div>
+          </div>
 
-                <div class="slide-content">
-                    <h2>GPS III</h2>
+          <!-- Slide 4 -->
 
-                    <p>
-                        Next-generation navigation satellites delivering
-                        improved accuracy and reliability worldwide.
-                    </p>
-
-                    <div class="info">
-                        <span>Purpose: Navigation</span>
-                        <span>Orbit: MEO</span>
-                    </div>
-                </div>
-
+          <div class="slide">
+            <div class="slide-image">
+              <img src="images/gps-block-III.jpg" alt="" />
             </div>
 
-            <!-- Slide 5 -->
+            <div class="slide-content">
+              <h2>GPS III</h2>
 
-            <div class="slide">
+              <p>
+                Next-generation navigation satellites delivering improved
+                accuracy and reliability worldwide.
+              </p>
 
-                <div class="slide-image">
-                    <img src="/images/sputnik1.jpg" alt="">
-                </div>
+              <div class="info">
+                <span>Purpose: Navigation</span>
+                <span>Orbit: MEO</span>
+              </div>
+            </div>
+          </div>
 
-                <div class="slide-content">
-    <h2>Sputnik 1</h2>
+          <!-- Slide 5 -->
 
-    <p>
-        The world's first artificial satellite, launched by
-        the Soviet Union and marking the beginning of the
-        Space Age in 1957.
-    </p>
-
-    <div class="info">
-        <span>Launch: 1957</span>
-        <span>Orbit: Low Earth Orbit</span>
-    </div>
-</div>
-
+          <div class="slide">
+            <div class="slide-image">
+              <img src="/images/sputnik1.jpg" alt="" />
             </div>
 
+            <div class="slide-content">
+              <h2>Sputnik 1</h2>
+
+              <p>
+                The world's first artificial satellite, launched by the Soviet
+                Union and marking the beginning of the Space Age in 1957.
+              </p>
+
+              <div class="info">
+                <span>Launch: 1957</span>
+                <span>Orbit: Low Earth Orbit</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <button class="nav-btn next">&#10095;</button>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!--------------------- Footer  --------------------------->
-<section class="bg-dark text-light py-5 border-top border-secondary" id="footer">
-
-    <div class="container">
-
+    <!--------------------- Footer  --------------------------->
+    <section
+      class="bg-dark text-light py-5 border-top border-secondary"
+      id="footer"
+    >
+      <div class="container">
         <div class="row g-4">
+          <div class="col-lg-4">
+            <h2 class="fw-bold">
+              Space<span class="text-info">Explorer</span>
+            </h2>
 
-            <div class="col-lg-4">
-                <h2 class="fw-bold">
-                    Space<span class="text-info">Explorer</span>
-                </h2>
+            <p class="text-secondary mt-3">
+              Explore planets, astronauts, galaxies, stars and satellites
+              through an immersive space exploration experience.
+            </p>
+          </div>
 
-                <p class="text-secondary mt-3">
-                    Explore planets, astronauts, galaxies, stars and satellites
-                    through an immersive space exploration experience.
-                </p>
-            </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="mb-3">Explore</h5>
 
-            <div class="col-lg-2 col-md-4">
-                <h5 class="mb-3">Explore</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#solar" class="text-decoration-none text-secondary">
+                  Solar System
+                </a>
+              </li>
 
-                <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="#astronauts"
+                  class="text-decoration-none text-secondary"
+                >
+                  Astronauts
+                </a>
+              </li>
 
-                    <li class="mb-2">
-                        <a href="#solar" class="text-decoration-none text-secondary">
-                            Solar System
-                        </a>
-                    </li>
+              <li class="mb-2">
+                <a href="#galaxies" class="text-decoration-none text-secondary">
+                  Galaxies
+                </a>
+              </li>
 
-                    <li class="mb-2">
-                        <a href="#astronauts" class="text-decoration-none text-secondary">
-                            Astronauts
-                        </a>
-                    </li>
+              <li class="mb-2">
+                <a href="#stars" class="text-decoration-none text-secondary">
+                  Stars
+                </a>
+              </li>
 
-                    <li class="mb-2">
-                        <a href="#galaxies" class="text-decoration-none text-secondary">
-                            Galaxies
-                        </a>
-                    </li>
-
-                    <li class="mb-2">
-                        <a href="#stars" class="text-decoration-none text-secondary">
-                            Stars
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#satellites" class="text-decoration-none text-secondary">
-                            Satellites
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
+              <li>
+                <a
+                  href="#satellites"
+                  class="text-decoration-none text-secondary"
+                >
+                  Satellites
+                </a>
+              </li>
+            </ul>
+          </div>
 
           <div class="col-lg-3 col-md-4">
+            <h5 class="mb-3">Connect Me</h5>
 
-    <h5 class="mb-3">Connect Me</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a
+                  href="https://sandeshraut.vercel.app"
+                  target="_blank"
+                  class="text-decoration-none text-secondary d-flex align-items-center gap-2"
+                >
+                  <i class="bi bi-globe2 text-info"></i>
+                  Portfolio
+                </a>
+              </li>
 
-    <ul class="list-unstyled">
+              <li class="mb-3">
+                <a
+                  href="https://github.com/sandy0637R"
+                  target="_blank"
+                  class="text-decoration-none text-secondary d-flex align-items-center gap-2"
+                >
+                  <i class="bi bi-github text-info"></i>
+                  GitHub
+                </a>
+              </li>
 
-        <li class="mb-3">
+              <li class="mb-3">
+                <a
+                  href="https://www.linkedin.com/in/sandesh-b-raut"
+                  target="_blank"
+                  class="text-decoration-none text-secondary d-flex align-items-center gap-2"
+                >
+                  <i class="bi bi-linkedin text-info"></i>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="rautsandesh0637@gmail.com"
+                  target="_blank"
+                  class="text-decoration-none text-secondary d-flex align-items-center gap-2"
+                >
+                  <i class="bi bi-envelope text-info"></i>
+                  Gmail
+                </a>
+              </li>
+            </ul>
+          </div>
 
-            <a
-                href="https://sandeshraut.vercel.app"
-                target="_blank"
-                class="text-decoration-none text-secondary d-flex align-items-center gap-2"
-            >
-                <i class="bi bi-globe2 text-info"></i>
-                Portfolio
-            </a>
+          <div class="col-lg-3 col-md-4">
+            <h5 class="mb-3">Developer</h5>
 
-        </li>
-
-        <li class="mb-3">
-
-            <a
-                href="https://github.com/sandy0637R"
-                target="_blank"
-                class="text-decoration-none text-secondary d-flex align-items-center gap-2"
-            >
-                <i class="bi bi-github text-info"></i>
-                GitHub
-            </a>
-
-        </li>
-
-        <li class="mb-3">
-
-            <a
-                href="https://www.linkedin.com/in/sandesh-b-raut"
-                target="_blank"
-                class="text-decoration-none text-secondary d-flex align-items-center gap-2"
-            >
-                <i class="bi bi-linkedin text-info"></i>
-                LinkedIn
-            </a>
-
-        </li>
-        <li>
-
-            <a
-                href="rautsandesh0637@gmail.com"
-                target="_blank"
-                class="text-decoration-none text-secondary d-flex align-items-center gap-2"
-            >
-                <i class="bi bi-envelope text-info"></i>
-                Gmail
-            </a>
-
-        </li>
-
-
-    </ul>
-
-</div>
-
-            <div class="col-lg-3 col-md-4">
-
-                <h5 class="mb-3">Developer</h5>
-
-                <p class="text-secondary">
-                    Designed and developed by Sandesh Raut using modern web
-                    technologies and interactive UI concepts.
-                </p>
-
-            </div>
-
+            <p class="text-secondary">
+              Designed and developed by Sandesh Raut using modern web
+              technologies and interactive UI concepts.
+            </p>
+          </div>
         </div>
 
-        <hr class="border-secondary my-4">
+        <hr class="border-secondary my-4" />
 
         <div class="text-center">
-
-            <p class="text-secondary mb-0">
-                © 2026 Space Explorer • Developed by
-                <a
-                    href="https://sandeshraut.vercel.app"
-                    target="_blank"
-                    class="text-info text-decoration-none"
-                >
-                    Sandesh Raut
-                </a>
-            </p>
-
+          <p class="text-secondary mb-0">
+            © 2026 Space Explorer • Developed by
+            <a
+              href="https://sandeshraut.vercel.app"
+              target="_blank"
+              class="text-info text-decoration-none"
+            >
+              Sandesh Raut
+            </a>
+          </p>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-  
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-  <script src="index.js"></script>
-
-
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
